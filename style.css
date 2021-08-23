@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500&display=swap');
+* {
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(40, 183, 226), rgb(16, 91, 177));
+    font-family: 'Recursive', sans-serif;
+    color: white;
+}
+
+.background {
+  background:url(img/oliver-roos-fJTfWn5nNuk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 1.1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 13px -1px rgba(0,0,0,0.32); 
+  box-shadow: 5px 5px 13px -1px rgba(0,0,0,0.32);
+  
+}
+.background > * {
+  position: relative;
+  z-index: 10;
+}
+.background::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.location {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 1.2rem 0;    
+}
+.location h1 {
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.temperature {
+    margin: 0 auto;
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.temperature .icons {
+  padding-top: 2rem;
+}
+
+.degree-section {
+  padding: 2.2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;   
+}
+
+.degree-section span {
+margin: 10px 0;
+padding-top: 10px;
+font-size: 35px;
+}
+
+.degree-section h2 {
+   
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+.temperature-description {
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 400px;
+        padding: 20px;
+      }
+      
+      input {
+        width: 100%;
+        margin-top: 0;
+        padding: 0.5em;
+        border: 0;
+        border-bottom: 2px solid gray;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+      }
+      
+      input:focus {
+        border-bottom: 4px solid black;
+      }
+      
+      input[type="reset"] {
+        width: auto;
+        height: auto;
+        border-bottom: 0;
+        background-color: transparent;
+        color: #686868;
+        font-size: 14px;
+      }
+      
+      .title {
+        width: 100%;
+        margin-block-end: 0;
+        font-weight: 500;
+      }
+      
+      .note {
+        width: 100%;
+        margin-block-start: 0;
+        font-size: 12px;
+      }
+      
+      .form-label {
+        width: 100%;
+        padding: 0.5em;
+      }
+      
+      .full-field {
+        flex: 400px;
+        margin: 15px 0;
+      }
+      
+      .slim-field-left {
+        flex: 1 150px;
+        margin: 15px 15px 15px 0px;
+      }
+      
+      .slim-field-right {
+        flex: 1 150px;
+        margin: 15px 0px 15px 15px;
+      }
+      
+      .my-button {
+        background-color: #000;
+        border-radius: 6px;
+        color: #fff;
+        margin: 10px;
+        padding: 6px 24px;
+        text-decoration: none;
+      }
+      
+      .my-button:hover {
+        background-color: #666;
+      }
+      
+      .my-button:active {
+        position: relative;
+        top: 1px;
+      }
